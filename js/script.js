@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         const uploadedFile = document.querySelector('#fileUpload').files[0];
         toBase64(uploadedFile)
             .then(res => {
-                return res;
+                console.log(res);
             })
             .catch(err => {
                 console.log(err);
